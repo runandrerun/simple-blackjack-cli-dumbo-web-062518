@@ -3,12 +3,11 @@ def welcome
 end
 
 def deal_card
-  rand(1..11)
+  card = rand(1..11)
 end
 
 def display_card_total(card_total)
   # code #display_card_total here
-  card_total = deal_card + deal_card
   puts "Your cards add up to #{card_total}"
 end
 
@@ -29,9 +28,10 @@ end
 
 def initial_round
   # code #initial_round here
-  deal_card
-  deal_card
-  display_card_total
+  card_one = deal_card
+  card_two = deal_card
+  card_total = deal_card + deal_card
+  display_card_total(card_total)
 end
 
 def hit?
