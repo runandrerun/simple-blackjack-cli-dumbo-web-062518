@@ -40,7 +40,7 @@ def hit?(card_total)
   prompt_user
   move = get_user_input
   if move == "s"
-    display_card_total
+    return display_card_total
   elsif move == "h"
     deal_card
   else 
