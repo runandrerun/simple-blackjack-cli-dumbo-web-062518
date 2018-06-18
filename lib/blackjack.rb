@@ -40,10 +40,9 @@ def hit?(card_total)
   prompt_user
   move = get_user_input
   if move == "s"
-    return display_card_total
+    card_total
   elsif move == "h"
-    deal_card
-    return display_card_total
+    card_total += deal_card
   else 
     puts "Please enter a valid command"
     prompt_user
