@@ -43,6 +43,7 @@ def hit?(card_total)
     return display_card_total
   elsif move == "h"
     deal_card
+    return display_card_total
   else 
     puts "Please enter a valid command"
     prompt_user
