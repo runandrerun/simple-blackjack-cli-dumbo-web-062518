@@ -64,9 +64,7 @@ def runner
   welcome
   initial_round
   hit?
-  if card_total > 21
-    break
-  else
+  until card_total >= 21
     hit?
   end
 end
