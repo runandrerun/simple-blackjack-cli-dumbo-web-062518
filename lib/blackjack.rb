@@ -44,14 +44,15 @@ def hit?(card_total)
   elsif move == "h"
     card_total += deal_card
   else 
-    puts "Please enter a valid command"
-    prompt_user
-    move = get_user_input
+    invalid_command
   end
 end
 
 def invalid_command
   # code invalid_command here
+  puts "Please enter a valid command"
+  prompt_user
+  move = get_user_input
 end
 
 #####################################################
